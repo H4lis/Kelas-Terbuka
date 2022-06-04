@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// overloading = menimpa
+// basic function
+
+int luas_kotak(int panjang, int lebar){
+	int luas = panjang * lebar ;
+	return luas;
+}
+
+// overload function
+int luas_kotak(int panjang){
+	int luas = panjang *panjang;
+	return luas;
+}
+double luas_kotak(double panjang){
+	return panjang *panjang;
+}
+
+int main(){
+	cout << luas_kotak(2,3) << endl;
+	cout << luas_kotak(2 )<< endl;
+	cout << luas_kotak(2.5);
+}
